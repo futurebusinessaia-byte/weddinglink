@@ -1,0 +1,13 @@
+# Pretty URLs for marketing / ad landing pages
+/wedding-invitation-website   /sales.html   200
+/wedding-website              /sales.html   200
+/digital-wedding-invitation   /sales.html   200
+/online-wedding-invitation    /sales.html   200
+/wedding-rsvp                 /sales.html   200
+
+# Demo shortcuts
+/demo                         /index.html   200
+/invitation                   /invite.html  200
+
+# Fallback
+/*  /404.html  404
