@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Aarav &amp; Anaya · 18 January 2027 · Jaipur</title>
+<meta name="description" content="Aarav & Anaya invite you to celebrate their wedding in Jaipur on 18 January 2027. View events, venue, gallery, live stream and RSVP." />
+<meta name="theme-color" content="#FBF7F0" />
+<meta property="og:title" content="Aarav & Anaya · Wedding Invitation" />
+<meta property="og:description" content="18 January 2027 · Jaipur, Rajasthan. You're invited." />
+<meta property="og:type" content="website" />
+<link rel="manifest" href="manifest.json" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="wedding-site">
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" aria-label="Aarav and Anaya">
+      <span class="nav-initial" data-field="couple_initial">A&amp;A</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story">Our Story</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#live" id="navLive" hidden>Live</a>
+      <a href="#gifts" id="navGifts" hidden>Gifts</a>
+      <a href="#venue">Venue</a>
+      <a href="#rsvp" class="nav-cta">RSVP</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-floral hero-floral--tl" aria-hidden="true"></div>
+  <div class="hero-floral hero-floral--br" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-field="invite_line">Together with their families</p>
+
+    <h1 class="hero-names">
+      <span data-field="couple_name_1">Aarav</span>
+      <span class="hero-amp">&amp;</span>
+      <span data-field="couple_name_2">Anaya</span>
+    </h1>
+
+    <div class="hero-rule" aria-hidden="true">
+      <span></span>
+      <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2c1.6 3.2 3.2 4.8 6.4 6.4-3.2 1.6-4.8 3.2-6.4 6.4-1.6-3.2-3.2-4.8-6.4-6.4C8.8 6.8 10.4 5.2 12 2z" fill="currentColor"/></svg>
+      <span></span>
+    </div>
+
+    <p class="hero-date">
+      <span data-field="wedding_date_label">18 January 2027</span>
+      <span class="dot">·</span>
+      <span data-field="city">Jaipur, India</span>
+    </p>
+
+    <p class="hero-tagline" data-field="hero_tagline">Two families. One beautiful beginning.</p>
+
+    <div class="hero-actions">
+      <a href="#rsvp" class="btn btn-primary" data-cta="hero-rsvp">RSVP</a>
+      <a href="#events" class="btn btn-ghost" data-cta="hero-events">View Celebration</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="countdown-section">
+  <p class="section-eyebrow">Save the date</p>
+  <h2 class="section-title">Until we say <em>“I do”</em></h2>
+  <div class="countdown" id="countdown" data-wedding-date="2027-01-18T16:30:00+05:30">
+    <div class="cd-unit"><span class="cd-num" id="cd-days">—</span><span class="cd-label">Days</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-hours">—</span><span class="cd-label">Hours</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">—</span><span class="cd-label">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">—</span><span class="cd-label">Seconds</span></div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="section story" id="story">
+  <p class="section-eyebrow">Our Story</p>
+  <h2 class="section-title">A little story about us</h2>
+  <div class="story-grid" id="storyGrid"></div>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section class="section events" id="events">
+  <p class="section-eyebrow">The Celebration</p>
+  <h2 class="section-title">Wedding Events</h2>
+  <div class="events-grid" id="eventsGrid"></div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="gallery">
+  <p class="section-eyebrow">Moments</p>
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery-filters" id="galleryFilters"></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<!-- ============ LIVE STREAM ============ -->
+<section class="section live-stream" id="live" hidden>
+  <p class="section-eyebrow">Join from anywhere</p>
+  <h2 class="section-title">Watch the wedding live</h2>
+  <p class="section-lead" id="liveStreamNote">Can't make it in person? Join us live from anywhere in the world.</p>
+
+  <div class="live-card">
+    <div class="live-status">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span>Streaming on <strong id="liveStreamDate">18 January 2027 · 4:30 PM IST</strong></span>
+    </div>
+    <div class="live-video" id="liveVideoBox">
+      <div class="live-placeholder">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path d="M23 7l-7 5 7 5V7zM1 5h14v14H1z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p>The live stream will appear here on the wedding day.</p>
+      </div>
+    </div>
+    <p class="live-note">Bookmark this page. The stream starts 5 minutes before the ceremony.</p>
+  </div>
+</section>
+
+<!-- ============ GIFTS ============ -->
+<section class="gifts" id="gifts" hidden>
+  <p class="section-eyebrow">With gratitude</p>
+  <h2 class="section-title">Send your blessings</h2>
+  <p class="section-lead" id="giftsNote">Your blessings mean the most. If you wish to gift digitally, scan or tap below.</p>
+
+  <div class="gifts-card" id="giftsMethod">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- ============ VENUE ============ -->
+<section class="section venue" id="venue">
+  <p class="section-eyebrow">Where</p>
+  <h2 class="section-title" data-field="city">Jaipur, Rajasthan</h2>
+  <p class="venue-address" data-field="venue_address">Bhawani Singh Rd, Rambagh, Jaipur, Rajasthan 302005</p>
+  <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener" class="btn btn-primary" data-cta="venue-maps" data-field-href="google_maps_url">
+    Open Google Maps
+    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="section rsvp" id="rsvp">
+  <p class="section-eyebrow">Kindly Respond</p>
+  <h2 class="section-title">RSVP</h2>
+  <p class="section-lead">Your presence means the world. Please confirm by <span data-field="rsvp_deadline">5 January 2027</span>.</p>
+
+  <form class="rsvp-form" id="rsvpForm" novalidate>
+    <div class="field">
+      <label for="rsvpName">Guest name</label>
+      <input type="text" id="rsvpName" name="name" required autocomplete="name" placeholder="Your full name" />
+    </div>
+
+    <div class="field">
+      <label for="rsvpGuests">Number of guests</label>
+      <select id="rsvpGuests" name="guests" required>
+        <option value="1">1 guest</option>
+        <option value="2">2 guests</option>
+        <option value="3">3 guests</option>
+        <option value="4">4 guests</option>
+        <option value="5">5 guests</option>
+        <option value="6">6+ guests</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Attendance</label>
+      <div class="radio-row">
+        <label class="radio-pill">
+          <input type="radio" name="attendance" value="yes" checked />
+          <span>Joyfully accept</span>
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="attendance" value="no" />
+          <span>Regretfully decline</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="rsvpMsg">Message <span class="optional">(optional)</span></label>
+      <textarea id="rsvpMsg" name="message" rows="3" placeholder="A note for the couple…"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full" data-cta="rsvp-submit">Confirm Attendance</button>
+    <p class="form-note">We'll confirm via WhatsApp shortly.</p>
+  </form>
+
+  <div class="rsvp-success" id="rsvpSuccess" hidden>
+    <div class="success-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h3>Thank you</h3>
+    <p id="rsvpSuccessMsg">Your response has been recorded. We can't wait to celebrate with you.</p>
+    <button type="button" class="btn btn-ghost" id="rsvpAgain">Submit another response</button>
+  </div>
+</section>
+
+<!-- ============ SHARE + QR ============ -->
+<section class="section share" id="share">
+  <div class="share-card">
+    <div class="share-qr">
+      <div id="qrcode" class="qr-box" aria-label="QR code to open the wedding invitation"></div>
+      <p class="qr-label">Scan to open the wedding invitation</p>
+    </div>
+    <div class="share-info">
+      <p class="section-eyebrow">Spread the joy</p>
+      <h2 class="section-title share-title">Share on WhatsApp</h2>
+      <p class="share-copy">Send the wedding link to your family and friends in one tap.</p>
+      <div class="share-actions">
+        <button type="button" class="btn btn-whatsapp" id="shareWhatsApp" data-cta="whatsapp-share">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.4zM12 22c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A9.9 9.9 0 0 1 2 12C2 6.5 6.5 2 12 2c2.7 0 5.2 1 7.1 2.9A10 10 0 0 1 22 12c0 5.5-4.5 10-10 10z"/></svg>
+          Share on WhatsApp
+        </button>
+        <button type="button" class="btn btn-ghost" id="copyLink" data-cta="copy-link">Copy link</button>
+      </div>
+      <p class="share-url" id="shareUrl"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <p class="footer-names">
+    <span data-field="couple_name_1">Aarav</span> &amp; <span data-field="couple_name_2">Anaya</span>
+  </p>
+  <p class="footer-date" id="footerDate">18 · 01 · 2027 · Jaipur</p>
+  <p class="footer-brand">
+    WeddingLink <span class="footer-by">by InfraAgentAI</span>
+  </p>
+</footer>
+
+<!-- ============ STICKY CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#rsvp" class="btn btn-primary btn-full" data-cta="sticky-rsvp">RSVP</a>
+</div>
+
+<!-- Scripts: data first, then QR library, then wedding.js (must be last) -->
+<script src="data/wedding-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="js/wedding.js"></script>
+</body>
+  </html>
